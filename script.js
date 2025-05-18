@@ -34,8 +34,8 @@ async function reimaginar() {
     const response = await fetch("https://api.deepai.org/api/text2img", {
       method: "POST",
       headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-        "api-key": "f84a1ee8-36de-4ff7-94ed-cdc24b9461f6" // ⬅️ Reemplaza esto con tu API key real
+        "api-key": "f84a1ee8-36de-4ff7-94ed-cdc24b9461f6", // ✅ SOLO para pruebas
+        "Content-Type": "application/x-www-form-urlencoded"
       },
       body: new URLSearchParams({ text: promptUsuario })
     });
@@ -45,7 +45,7 @@ async function reimaginar() {
     if (data.output_url) {
       resultado.innerHTML = `
         <h3>🎨 Imagen generada por IA:</h3>
-        <img src="${data.output_url}" alt="Imagen generada" class="imagen-ia" />
+        <img src="${data.output_url}" alt="Imagen generada por IA" class="imagen-ia" />
       `;
     } else {
       resultado.innerHTML = "❌ No se pudo generar la imagen.";
