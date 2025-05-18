@@ -1,0 +1,97 @@
+/* 🔹 General */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #ffffff, #f4f4f4);
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* 🔹 Menú lateral */
+.menu {
+  width: 250px;
+  background-color: #1f1f1f;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.menu h2 {
+  font-family: 'Playfair Display', serif;
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 10px 0;
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.menu li:hover {
+  color: #fff;
+}
+
+/* 🔹 Contenido central */
+.contenido {
+  flex-grow: 1;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.obra-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.obra-container img {
+  max-height: 85vh;
+  width: auto;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+}
+
+.descripcion {
+  margin-top: 20px;
+  font-size: 18px;
+  max-width: 700px;
+}
+
+/* 🔹 Botón IA */
+.ia-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  padding: 12px 24px;
+  border: none;
+  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.ia-btn:hover {
+  transform: scale(1.05);
+}
+
+/* 🔹 Imagen generada por IA */
+.imagen-ia {
+  max-width: 500px;
+  display: block;
+  margin: 30px auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}

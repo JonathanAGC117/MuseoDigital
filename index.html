@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Museo Digital</title>
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Menú lateral -->
+  <div class="menu">
+    <h2>Obras</h2>
+    <ul id="obra-menu">
+      <li onclick="mostrarObra(this)" data-imagen="imagenes/1.jpg" data-titulo="La noche estrellada" data-descripcion="Una de las obras más icónicas de Vincent van Gogh.">La noche estrellada</li>
+      <li onclick="mostrarObra(this)" data-imagen="imagenes/2.jpg" data-titulo="Mona Lisa" data-descripcion="Pintura renacentista de Leonardo da Vinci.">Mona Lisa</li>
+      <li onclick="mostrarObra(this)" data-imagen="imagenes/3.jpg" data-titulo="El grito" data-descripcion="Obra expresionista de Edvard Munch.">El grito</li>
+      <li onclick="mostrarObra(this)" data-imagen="imagenes/4.jpg" data-titulo="El jardín de las delicias" data-descripcion="Tríptico de Hieronymus Bosch.">El jardín de las delicias</li>
+      <li onclick="mostrarObra(this)" data-imagen="imagenes/5.jpg" data-titulo="Guernica" data-descripcion="Obra antibélica de Pablo Picasso.">Guernica</li>
+    </ul>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="contenido">
+    <div class="obra-container">
+      <img id="imagen-obra" src="" alt="Obra de arte" />
+      <div class="descripcion" id="descripcion-obra"></div>
+    </div>
+
+    <!-- Botón IA -->
+    <button class="ia-btn" id="btn-reimaginar">✨ IA: Reimaginar</button>
+
+    <!-- Resultado IA -->
+    <div id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
